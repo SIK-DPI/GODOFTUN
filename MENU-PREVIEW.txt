@@ -1,0 +1,71 @@
+
+  --------------------------------------------------------------------
+  GODOFTUN V1.0.0
+  sik-dpi / CONTROL ROOM
+  https://t.me/SIKDPI
+  --------------------------------------------------------------------
+  IRAN IP + ports -> Cloudflare WSS -> FOREIGN
+  REQUIRED: foreign domain with Cloudflare Proxy ON
+
+  QUICK START
+    [1] Set up FOREIGN server
+        Start here; create your pairing code.
+    [2] Set up IRAN server
+        Paste the code; choose multiple client ports.
+
+  WORKSPACE
+    [3] Manage tunnels
+        Tunnels / Tuning / Customers / Doctor
+    [4] Transfer installer
+        Offline file transfer guide.
+    [5] Update GODOFTUN V1
+        Preserve settings and usage; not a 3.x migration.
+
+    [0] Exit
+  --------------------------------------------------------------------
+
+  PREVIEW / NO SERVER CHANGES
+  No installation or server changes. No live status is queried.
+  The management menu below is available after installation.
+
+  TUNNELS
+    [1] List tunnels
+    [2] Status
+    [3] Monitor
+    [4] Logs
+    [5] Restart
+    [6] Stop
+    [7] Start
+    [9] Client info
+
+  TUNING
+    [15] Edit all tunnel settings
+        Padding / MUX / sessions / streams / memory / TLS
+    [17] Show editable settings
+    [10] Change IP
+    [11] Change ports
+    [14] Apply paired-server update code (V1)
+    [16] Apply paired-server editor code (V1)
+
+  CUSTOMERS
+    [13] Customers, ports and traffic quotas (Iran)
+
+  DOCTOR
+    [8] Health test
+    [18] Bounded connection diagnostics / scanner
+
+  REMOVE
+    [12] Remove one tunnel
+        Requires confirmation; other tunnels stay intact.
+  --------------------------------------------------------------------
+
+  SETUP GUIDE
+  Foreign: name -> Cloudflare domain -> HTTPS ports -> target inbound
+  -> MUX -> padding -> certificate.
+  Iran: pairing code -> IP -> multiple client ports -> sessions ->
+  padding -> ECH OFF / ECH ON / Fragment -> quota.
+  Padding default: 0.22. V1 wire window: fixed 512 KiB.
+  Memory budgets are not a process RSS cap.
+  First test on new servers with your real Cloudflare domain.
+  Existing 3.x/V3 installations and pairing codes are not compatible.
+
